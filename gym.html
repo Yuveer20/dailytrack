@@ -126,7 +126,10 @@ html, body {
 .po-shell {
   width: 100%; max-width: min(720px, 100vw);
   margin: 0 auto;
-  padding: 24px 16px calc(40px + env(safe-area-inset-bottom));
+  padding-top: max(24px, env(safe-area-inset-top));
+  padding-left: calc(16px + env(safe-area-inset-left));
+  padding-right: calc(16px + env(safe-area-inset-right));
+  padding-bottom: calc(40px + env(safe-area-inset-bottom));
   box-sizing: border-box;
 }
 /* Defeat the default `min-width: auto` on flex/grid items — without

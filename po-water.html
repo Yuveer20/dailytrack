@@ -82,7 +82,7 @@ html, body {
   -webkit-font-smoothing: antialiased;
   min-height: 100vh;
 }
-.shell { max-width: 720px; margin: 0 auto; padding: 24px 16px 80px; }
+.shell { max-width: 720px; margin: 0 auto; padding-top: max(24px, env(safe-area-inset-top)); padding-left: calc(16px + env(safe-area-inset-left)); padding-right: calc(16px + env(safe-area-inset-right)); padding-bottom: calc(80px + env(safe-area-inset-bottom)); }
 
 /* ----- Top day pill + header ----- */
 .day-pill {
