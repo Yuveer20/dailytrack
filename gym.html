@@ -33,13 +33,14 @@ const CONFIG = {
   days: [
     { id: "push", name: "Push" },
     { id: "pull", name: "Pull" },
+    { id: "upper", name: "Upper" },
     { id: "legs", name: "Legs" }
   ],
 
   // Split rotation — the order your training days cycle through. Use day
   // ids from `days` above, plus "rest" for off-days. The pill at the top
   // of the app reads this + splitAnchor to compute "what day is today".
-  splitRotation: ["push", "pull", "legs", "rest"],
+  splitRotation: ["push", "pull", "upper", "legs", "rest"],
 
   // Anchor: pair a real calendar date with which split day fell on it.
   // The rotation advances from this point. Set `date` to a recent day
@@ -86,7 +87,8 @@ const CONFIG = {
     { name: "Bicep curl",      gym: "comm", day: "pull", repMin: 8, repMax: 12, step: 1.25,startWeight: 15 },
     { name: "Back squat",      gym: "comm", day: "legs", repMin: 5, repMax: 8,  step: 5,   startWeight: 80 },
     { name: "Romanian deadlift", gym: "comm", day: "legs", repMin: 6, repMax: 10, step: 5, startWeight: 60 },
-    { name: "Leg press",       gym: "comm", day: "legs", repMin: 8, repMax: 12, step: 5,   startWeight: 100 }
+    { name: "Leg press",       gym: "comm", day: "legs", repMin: 8, repMax: 12, step: 5,   startWeight: 100 },
+    { name: "Incline bench press", gym: "comm", day: "upper", repMin: 5, repMax: 8,  step: 2.5, startWeight: 45 }
   ]
 };
 </script>
